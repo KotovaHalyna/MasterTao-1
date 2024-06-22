@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="theme-color" content="#188de7">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
+    <title>Master Tao</title>
+
+    <link rel="stylesheet" href="assets/css/fancybox.min.css">
+    <link rel="stylesheet" href="assets/css/hamburgers.min.css">
+    <link rel="stylesheet" href="assets/css/slick.min.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<header>
+    <div class="container container-wrapper">
+        <a href="index.html" class="logo">
+      <img class="logo-first img-fluid" src="assets/img/logo-first.svg" alt="logo">
+  </a>
+        <div class="navigation-section">
+            <nav class="navigation-list">
+                <a href="#">Цены и сроки</a>
+                <a href="#">Услуги</a>
+                <a href="#">О компании</a>
+                <a href="#">Контакты</a>
+                <a href="#">Оформить груз</a>
+            </nav>
+            <button type="button" class="btn  btn-primary navigation-btn">Оставить заявку</button>
+        </div>
+        <button id="burger" class="hamburger hamburger--spin" type="button">
+            <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+            </span>
+        </button>
+    </div>
+</header>
+
+
+
+<main class="wrapper home">
+
+    <section>
+        <div class="container">
+            <h2>Test title</h2>
+            <div class="row">
+                <div class="col-md-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quia laudantium inventore distinctio deleniti laborum neque totam harum doloribus cumque ullam, fugit dolore error optio quam odio molestias sint, quidem earum? Omnis vel obcaecati maiores corrupti, corporis optio dicta, recusandae in itaque accusantium veniam temporibus esse nostrum, placeat quo hic iure repellat. Eveniet architecto tempore, ex mollitia laboriosam quaerat ullam ea nesciunt voluptates aliquid sed itaque eaque consequuntur molestiae magni necessitatibus sapiente fugiat odit laborum id ratione iusto animi deserunt sint? Eius tempore mollitia inventore fuga eum ipsa dicta, tempora, numquam, voluptas totam porro alias asperiores beatae? Dicta quisquam dolorem, asperiores quod unde sit sed at nulla vero ab consequatur totam voluptatibus rerum modi eligendi molestias aliquam quibusdam. At, odio.</div>
+                <div class="col-md-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quia laudantium inventore distinctio deleniti laborum neque totam harum doloribus cumque ullam, fugit dolore error optio quam odio molestias sint, quidem earum? Omnis vel obcaecati maiores corrupti, corporis optio dicta, recusandae in itaque accusantium veniam temporibus esse nostrum, placeat quo hic iure repellat. Eveniet architecto tempore, ex mollitia laboriosam quaerat ullam ea nesciunt voluptates aliquid sed itaque eaque consequuntur molestiae magni necessitatibus sapiente fugiat odit laborum id ratione iusto animi deserunt sint? Eius tempore mollitia inventore fuga eum ipsa dicta, tempora, numquam, voluptas totam porro alias asperiores beatae? Dicta quisquam dolorem, asperiores quod unde sit sed at nulla vero ab consequatur totam voluptatibus rerum modi eligendi molestias aliquam quibusdam. At, odio.</div>
+                <div class="col-md-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quia laudantium inventore distinctio deleniti laborum neque totam harum doloribus cumque ullam, fugit dolore error optio quam odio molestias sint, quidem earum? Omnis vel obcaecati maiores corrupti, corporis optio dicta, recusandae in itaque accusantium veniam temporibus esse nostrum, placeat quo hic iure repellat. Eveniet architecto tempore, ex mollitia laboriosam quaerat ullam ea nesciunt voluptates aliquid sed itaque eaque consequuntur molestiae magni necessitatibus sapiente fugiat odit laborum id ratione iusto animi deserunt sint? Eius tempore mollitia inventore fuga eum ipsa dicta, tempora, numquam, voluptas totam porro alias asperiores beatae? Dicta quisquam dolorem, asperiores quod unde sit sed at nulla vero ab consequatur totam voluptatibus rerum modi eligendi molestias aliquam quibusdam. At, odio.</div>
+            </div>
+        </div>
+    </section>
+
+</main>
+<footer>
+    Footer
+</footer>
+<script src="assets/js/jquery-3.7.1.min.js"></script>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/fancybox.min.js"></script>
+<script src="assets/js/slick.min.js"></script>
+<script src="assets/js/swiper-bundle.min.js"></script>
+<script src="assets/js/custom.js"></script>
+<script>
+var forEach = function(t, o, r) {
+    if ("[object Object]" === Object.prototype.toString.call(t))
+        for (var c in t) Object.prototype.hasOwnProperty.call(t, c) && o.call(r, t[c], c, t);
+    else
+        for (var e = 0, l = t.length; l > e; e++) o.call(r, t[e], e, t)
+};
+var hamburgers = document.querySelectorAll(".hamburger");
+if (hamburgers.length > 0) {
+    forEach(hamburgers, function(hamburger) {
+        hamburger.addEventListener("click", function() {
+            this.classList.toggle("is-active");
+        }, false);
+    });
+}
+</script>
+<script>
+Fancybox.bind("[data-fancybox]", {});
+</script>
+<script>
+$('.single-item').slick();
+</script>
+</body>
+
+</html>
